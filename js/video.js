@@ -60,7 +60,9 @@ slider.addEventListener("input", function () {
 	console.log("The current value is " + slider.value);
 	video.volume = slider.value / 100;
 	console.log("The current value is " + slider.value);
-	document.querySelector("#volume").textContent = slider.value + "%";
+	volume=document.querySelector("#volume")
+	volume.textContent = slider.value + "%";
+	console.log(volume);
 });
 
 document.querySelector("#vintage").addEventListener("click", function () {
