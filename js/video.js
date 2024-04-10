@@ -49,9 +49,11 @@ document.querySelector("#skip").addEventListener("click", function () {
 document.querySelector("#mute").addEventListener("click", function () {
 	if (video.muted) {
 		video.muted = false;
+		this.textContent = "Mute";
 		console.log("Unmute");
 	} else {
 		video.muted = true;
+		this.textContent = "Unmute";
 		console.log("Mute");
 	}
 });
